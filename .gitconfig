@@ -2,14 +2,14 @@
 	defaultBranch = main
 [user]
 	name = Gabriela Carvalho Camilo
-	email = gabccamilo.dev@gmail.com
+	email = gabccamilo@gmail.com
 [core]
-	# editor = vim
-	editor = code --wait # changes default editor to vscode, --wait ensures git will load the data before opening vscode
+	editor = vim
+	# editor = code --wait # changes default editor to vscode, --wait ensures git will load the data before opening vscode
 	
 [alias]
 	s = !git status -s # -s for more simple output
 	c = !git add --all && git commit -m
-#	l = !git log --oneline
-	l = !git --no-pager log --pretty=format:'%C(yellow)%h%C(red)%d %C(reset)%s - %C(cyan)%cn, %C(green)%cr'
+	# l = !git log --oneline
+	l = !git --no-pager log --reverse --pretty=format:'%C(yellow)%h%C(red)%d %C(reset)%s - %C(cyan)%cn, %C(green)%cr'
 	p = !git push
